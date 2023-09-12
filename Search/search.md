@@ -48,4 +48,6 @@ public:
 
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi2.png)
 3. 哈希冲突解决
-![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi1.png)
+![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi4.png)
+
+![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi5.png)
