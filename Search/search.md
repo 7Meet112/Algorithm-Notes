@@ -57,7 +57,7 @@ public:
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi5.png)
 ##### 哈希查找
 
-![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haxi6.png)
+![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/haix6.png)
 
 ```
 #include"stdio.h"
