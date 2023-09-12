@@ -1,4 +1,5 @@
 /*
+邻接表：bfs dfs
 Please enter the vertex and edge:
 
 5 6
