@@ -1,4 +1,5 @@
 /*
+邻接矩阵：bfs dfs
 Please enter the vertex and edge:
 
 4 5
