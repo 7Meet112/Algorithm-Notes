@@ -19,4 +19,8 @@
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao.png)
    
 4. 遍历算法
-5. 最小生成树
+   
+   bfs dfs
+6. 最小生成树
+   
+   prim kruskal
