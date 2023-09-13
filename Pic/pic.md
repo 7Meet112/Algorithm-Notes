@@ -15,7 +15,9 @@
      
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/linjiebiao.png)
    - 十字链表
-     
+
+   ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao2.png)
+   
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao.png)
    
 4. 遍历算法
