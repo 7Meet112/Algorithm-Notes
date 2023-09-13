@@ -23,6 +23,8 @@
 4. 遍历算法
    
    bfs dfs
+   
+   ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/dfsbfs2.png)
 
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/dfsbfs.png)
 6. 最小生成树
