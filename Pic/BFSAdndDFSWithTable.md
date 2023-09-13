@@ -1,3 +1,4 @@
+```
 /*
 邻接表：bfs dfs
 Please enter the vertex and edge:
@@ -196,3 +197,4 @@ int main()
     DFSTraverse(G);
     return 0;
 }
+```
