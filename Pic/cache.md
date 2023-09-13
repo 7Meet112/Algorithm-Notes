@@ -75,41 +75,27 @@ int main()
 /*
 邻接表
 Please enter the vertex and edge:
-
 5 6
 Please enter the info about the vertex:
-
 A B C D E
 Give the order from one to another using numbers:
-
 0 1
 2 0
 1 3
 1 4
 3 4
 2 4
-
 The Glist info;
-
 A:-> C B
-
 B:-> E D A
-
 C:-> E A
-
 D:-> E B
-
 E:-> C D B
-
 */
-
 #include <iostream>
 #include <cstring>
-
 #define Max 100
-
 using namespace std;
-
 // 边表节点
 struct EdgeNode
 {
@@ -149,10 +135,12 @@ void CreateGList(GList &G)
     for (int j = 0; j < G.m; ++j)
     {
         cin >> a >> b;
+        // 头插，最后一个指向nullptr
         e = (EdgeNode *)malloc(sizeof(EdgeNode));
         e->location = a;
         e->next = G.list[b].firstEdge; // 指向当前顶点指向的节点
         G.list[b].firstEdge = e;
+
         // 无向图 没有方向
         e = (EdgeNode *)malloc(sizeof(EdgeNode));
         e->location = b;
