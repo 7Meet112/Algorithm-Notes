@@ -1,10 +1,15 @@
-1. 图的定义和术语
+- [图的定义和术语](#图的定义和术语)
+- [存储结构](#存储结构)
+- [遍历算法](#遍历算法)
+- [最小生成树](#最小生成树)
+
+#### 图的定义和术语
    
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/hutouhuwei.png)
 
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/ruduchudu.png)
  
-2. 存储结构
+#### 存储结构
    
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/basepic.png)
 
@@ -20,14 +25,14 @@
    
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao.png)
    
-4. 遍历算法
+#### 遍历算法
    
    bfs dfs
    
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/dfsbfs2.png)
 
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/dfsbfs.png)
-5. 最小生成树
+#### 最小生成树
 - prim
 - 主要思想
 
