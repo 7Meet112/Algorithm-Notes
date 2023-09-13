@@ -1,7 +1,7 @@
 #### 邻接矩阵
 ```
 /*
-邻接矩阵
+邻接矩阵(无向图)
 Please enter the vertex and edge:
 
 4 5
@@ -20,7 +20,6 @@ B C
 */
 #include "cstring" //memset()
 #include "iostream"
-#include "queue"
 
 using namespace std;
 
@@ -29,7 +28,7 @@ using namespace std;
 typedef struct
 {
     char v[Max];     // 存放顶点
-    int e[Max][Max]; // 0 代表无连接 1 代表存在连接
+    int e[Max][Max]; // 0代表无连接 1 代表存在连接
     int n, m;        // 当前矩阵的顶点和弧边数量
 } MGraph;
 
