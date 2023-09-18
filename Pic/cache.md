@@ -1,17 +1,33 @@
+- [邻接矩阵](#邻接矩阵)
+  - [分析](#分析)
+  - [实例](#实例)
+- [邻接表](#邻接表)
+  - [分析](#分析-1)
+  - [实例](#实例-1)
+
 #### 邻接矩阵
+##### 分析
+邻接矩阵实质上就是一个二维数组存储1/0
+```
+typedef struct
+{
+    char vertex[Max];     // 存放顶点
+    int edge[Max][Max];  // 0代表无连接 1 代表存在连接
+    int n, m;            // 当前矩阵的顶点和弧边数量
+} SGraph;
+```
+如果两边连接则：edge[i][j] = 1;
+##### 实例
 ```
 /*
 邻接矩阵(无向图)
 Please enter the vertex and edge:
-
 4 5
 
 Please enter the info about the vertex:
-
 E A C B
 
 Please enter a edge info from a vertex to another one by one in order:
-
 A E
 A B
 A C
@@ -71,6 +87,47 @@ int main()
 }
 ```
 #### 邻接表
+##### 分析
+1. 数据结构：（顶点）头结点、非头结点、邻接表
+```
+// 边表节点(头结点后的节点)
+struct EdgeNode
+{
+    int location; // 邻接表头节点所指向的节点的定位序号，根据指向的序号定位到特定顶点
+    struct EdgeNode *next;
+};
+
+// 头节点 头节点的指针指向边表节点 当使用List作为使用该结构体的名称时，视其为一个数组
+typedef struct VertexNode
+{
+    char data;// 顶点
+    EdgeNode *firstEdge;
+} List;
+
+typedef struct
+{
+    List list[Max]; // 存储头节点的数组、索引
+    int n, m;       // 当前邻接表的顶点和边数
+} GList;
+```
+2. 插入
+获取边的两个顶点、创建边、插入边
+```
+cin >> a >> b;
+// 头插法，最后一个指向nullptr
+// 创建边表节点
+e = (EdgeNode *)malloc(sizeof(EdgeNode));
+e->location = a;
+e->next = G.list[b].firstEdge; // 指向当前顶点指向的节点
+G.list[b].firstEdge = e;
+
+// 无向图 没有方向(a连接b，b也连接a)
+e = (EdgeNode *)malloc(sizeof(EdgeNode));
+e->location = b;
+e->next = G.list[a].firstEdge;
+G.list[a].firstEdge = e;
+```
+##### 实例
 ```
 /*
 邻接表
@@ -135,13 +192,13 @@ void CreateGList(GList &G)
     for (int j = 0; j < G.m; ++j)
     {
         cin >> a >> b;
-        // 头插，最后一个指向nullptr
+        // 头插法，最后一个指向nullptr
         e = (EdgeNode *)malloc(sizeof(EdgeNode));
         e->location = a;
         e->next = G.list[b].firstEdge; // 指向当前顶点指向的节点
         G.list[b].firstEdge = e;
 
-        // 无向图 没有方向
+        // 无向图 没有方向(a连接b，b也连接a)
         e = (EdgeNode *)malloc(sizeof(EdgeNode));
         e->location = b;
         e->next = G.list[a].firstEdge;
