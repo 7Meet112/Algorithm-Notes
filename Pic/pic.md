@@ -14,14 +14,19 @@
 ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/basepic.png)
 
    - 数组表示（邻接矩阵）
+
+   注：有向图无向图区分
      
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/lingjiejuzhen.png)
+
    - 邻接表
      
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/linjiebiao.png)
    - 十字链表
 
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao2.png)
+
+    注：多少个点（0——n),多少条边
    
    ![Image text](https://github.com/7Meet112/Algorithm-Notes/blob/main/image/shizilianbiao.png)
    
