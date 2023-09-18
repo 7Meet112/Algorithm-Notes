@@ -13,9 +13,10 @@
 	
 	const int maxn = 505;
 	
-	int a[maxn][maxn];
+	int a[maxn][maxn];// 权值
 	
-	int vis[maxn],dist[maxn];
+	int vis[maxn];//是否已经加入
+	int dist[maxn];// 距离
 	
 	int n,m;
 	
@@ -28,8 +29,11 @@
 		// 一共有 n 个点,就需要 遍历 n 次,每次寻找一个权值最小的点,记录其下标
 		for(int i = 1; i <= n; i ++) {
 			int cur = -1;
-			for(int j = 1; j <= n; j ++) {
-				if(!vis[j] && (cur == -1 || dist[j] < dist[cur])) {
+			for(int j = 1; j <= n; j ++)
+			{
+				// 寻找最小的值
+				if(!vis[j] && (cur == -1 || dist[j] < dist[cur]))
+				{
 					cur = j;
 				}
 			}
@@ -38,7 +42,7 @@
 			sum += dist[cur];
 			vis[cur] = 1;
 			for(int k = 1; k <= n; k ++) {
-			    // 只更新还没有找到的最小权值
+			    // 只更新还没有找到的最小权值，之前距离和新加入点距离的小值
 				if(!vis[k]) dist[k] = min(dist[k],a[cur][k]);
 			}
 		}
